@@ -1,0 +1,16 @@
+name: "✍️ Guestbook"
+description: "Say hello on my profile"
+title: "Guestbook: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for stopping by! A quick note, a good question, or a link to something you're making is welcome.
+  - type: textarea
+    id: message
+    attributes:
+      label: Your message
+      description: What would you like to share?
+      placeholder: "Hi! I found your profile through…"
+    validations:
+      required: true
