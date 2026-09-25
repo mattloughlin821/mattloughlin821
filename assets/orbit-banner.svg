@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Matthew Loughlin's systems map</title>
+  <desc id="desc">An animated constellation links Python, C++, machine learning, distributed systems, and observability.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1020"/><stop offset=".55" stop-color="#14213d"/><stop offset="1" stop-color="#092e39"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#67e8f9" stop-opacity=".5"/><stop offset="1" stop-color="#67e8f9" stop-opacity="0"/></radialGradient>
+    <style>
+      .orbit{fill:none;stroke:#67e8f9;stroke-opacity:.28;stroke-width:1.4;stroke-dasharray:4 9}
+      .edge{stroke:#67e8f9;stroke-opacity:.35;stroke-width:1.4}
+      .node{fill:#0e3448;stroke:#67e8f9;stroke-width:2}
+      .pulse{animation:pulse 4s ease-in-out infinite}
+      .float{animation:float 6s ease-in-out infinite}
+      .dash{animation:dash 18s linear infinite}
+      @keyframes pulse{50%{opacity:.55}}
+      @keyframes float{50%{transform:translateY(-6px)}}
+      @keyframes dash{to{stroke-dashoffset:-260}}
+      @media (prefers-reduced-motion:reduce){.pulse,.float,.dash{animation:none}}
+    </style>
+  </defs>
+  <rect width="1200" height="340" rx="24" fill="url(#bg)"/>
+  <g opacity=".16" stroke="#91b3cc" stroke-width="1">
+    <path d="M0 68H1200M0 136H1200M0 204H1200M0 272H1200"/>
+    <path d="M80 0V340M160 0V340M240 0V340M320 0V340M400 0V340M480 0V340M560 0V340M640 0V340M720 0V340M800 0V340M880 0V340M960 0V340M1040 0V340M1120 0V340"/>
+  </g>
+  <g fill="#d8f7ff"><circle cx="80" cy="51" r="2"/><circle cx="170" cy="271" r="1.5"/><circle cx="305" cy="77" r="1.5"/><circle cx="512" cy="34" r="1.5"/><circle cx="713" cy="294" r="2"/><circle cx="1017" cy="48" r="1.5"/><circle cx="1094" cy="282" r="1.5"/></g>
+  <circle cx="1142" cy="258" r="3" fill="#fbbf24"/>
+  <circle class="orbit dash" cx="600" cy="170" r="140"/>
+  <circle class="orbit" cx="600" cy="170" r="107"/>
+  <circle cx="600" cy="170" r="66" fill="url(#glow)"/>
+  <circle cx="600" cy="170" r="46" fill="#102d40" stroke="#67e8f9" stroke-width="2"/>
+  <text x="600" y="168" fill="#e7fbff" font-family="ui-monospace,Menlo,monospace" font-size="15" font-weight="700" text-anchor="middle">ML</text>
+  <text x="600" y="185" fill="#9ee7ef" font-family="ui-monospace,Menlo,monospace" font-size="9" letter-spacing="2" text-anchor="middle">SYSTEMS</text>
+  <g class="float">
+    <path class="edge" d="M558 150 409 91M642 150 790 91M558 190 409 250M642 190 790 250"/>
+    <circle class="node pulse" cx="394" cy="85" r="16"/><circle class="node pulse" cx="806" cy="85" r="16"/>
+    <circle class="node pulse" cx="394" cy="255" r="16"/><circle class="node pulse" cx="806" cy="255" r="16"/>
+    <g fill="#67e8f9"><circle cx="394" cy="85" r="4"/><circle cx="806" cy="85" r="4"/><circle cx="394" cy="255" r="4"/><circle cx="806" cy="255" r="4"/></g>
+    <g font-family="ui-monospace,Menlo,monospace" font-size="14">
+      <text x="368" y="58" fill="#c4f6fa" text-anchor="end">PYTHON</text>
+      <text x="833" y="58" fill="#ddd0ff">C++</text>
+      <text x="368" y="290" fill="#c4f6fa" text-anchor="end">DISTRIBUTED</text>
+      <text x="833" y="290" fill="#d9f9b9">OBSERVABILITY</text>
+    </g>
+  </g>
+  <g font-family="ui-monospace,Menlo,monospace" fill="#a6bdd0" font-size="11" letter-spacing="2">
+    <text x="35" y="35">MATTHEW / SYSTEM MAP</text>
+    <text x="35" y="315">EXPLORE THE SIGNALS ↓</text>
+    <text x="1165" y="315" text-anchor="end">01 / ∞</text>
+  </g>
+</svg>
